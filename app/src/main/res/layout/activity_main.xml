@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:contentDescription="palestine flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_palestine">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_palestine_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        android:textSize="60sp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/vote_btn_palestine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOTE"
+        android:textSize="30dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onPalestineClicked"
+        >
+    </Button>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20sp"
+            ></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_marginTop="-10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:contentDescription="israel flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_israel">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/israel_vote_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20dp"
+            android:textSize="60sp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/vote_btn_israel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOTE"
+            android:textSize="30dp"
+            android:layout_marginTop="-7dp"
+            android:onClick="onIsraelClicked"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
